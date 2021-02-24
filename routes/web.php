@@ -16,8 +16,7 @@ use App\Http\Controllers\DatosController;
 */
 
 Route::get('/', function () {
-	//return view('welcome');
-	return "Hola mundo";
+	return redirect()->route("tutor.create");
 });
 
 Route::resource('/tutor', TutoresController::class);

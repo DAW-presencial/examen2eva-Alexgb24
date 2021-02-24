@@ -15,12 +15,12 @@ class TutoresController extends Controller
      */
     public function index()
     {
-        return view("tutor");
+        return "";
 
     }
     public function create()
     {
-        return "";
+        return view("tutor");
     }
 
     /**
