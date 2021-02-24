@@ -17,48 +17,54 @@
                 </div>
                 <form action="">
                     <label for="empresa" class="form-label">Empresa</label>
-                    <input type="text" id="empresa" name="empresa" class="form-control"/>
+                    <input type="text" id="empresa" name="empresa" class="form-control" value="{{ old('empresa') }}"/>
 
                     <label for="tipo_documento" class="form-label">Tipo de documento</label>
                     <select class="form-select form-select-sm" id="tipo_documento" name="tipo_documento">
-                        <option value="nif">NIF</option>
-                        <option value="nie">NIE</option>
-                        <option value="pasaporte">Pasaporte</option>
+                        <option value="nif" {{ old("tipo_documento") == "nif" ? "selected" : "" }}>NIF</option>
+                        <option value="nie" {{ old("tipo_documento") == "nie" ? "selected" : "" }}>NIE</option>
+                        <option value="pasaporte" {{ old("tipo_documento") == "pasaporte" ? "selected" : "" }}>Pasaporte</option>
                     </select>
 
-                    <label for="tipo_documento" class="form-label">Documento de identidad</label>
-                    <input type="text" id="tipo_documento" name="tipo_documento" class="form-control"/>
+                    <label for="dni" class="form-label">Documento de identidad</label>
+                    <input type="text" id="dni" name="dni" class="form-control" value="{{ old('dni') }}"/>
 
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" class="form-control"/>
+                    <input type="text" id="nombre" name="nombre" class="form-control" value="{{ old('nombre') }}"/>
 
                     <label for="primer_apellido" class="form-label">Primer apellido</label>
-                    <input type="text" id="primer_apellido" name="primer_apellido" class="form-control"/>
+                    <input type="text" id="primer_apellido" name="primer_apellido" class="form-control" value="{{ old('primer_apellido') }}"/>
 
                     <label for="segundo_apellido" class="form-label">Segundo apellido</label>
-                    <input type="text" id="segundo_apellido" name="segundo_apellido" class="form-control"/>
+                    <input type="text" id="segundo_apellido" name="segundo_apellido" class="form-control" value="{{ old('segundo_apellido') }}"/>
 
                     <label for="pais_dni" class="form-label">País DNI</label>
-                    <input type="text" id="pais_dni" name="pais_dni" class="form-control"/>
+                    <input type="text" id="pais_dni" name="pais_dni" class="form-control" value="{{ old('pais_dni') }}"/>
 
                     <label for="provincia" class="form-label">Província</label>
-                    <input type="text" id="provincia" name="provincia" class="form-control"/>
+                    <input type="text" id="provincia" name="provincia" class="form-control" value="{{ old('provincia') }}"/>
 
                     <label for="municipio" class="form-label">Municipio</label>
-                    <input type="text" id="municipio" name="municipio" class="form-control"/>
+                    <input type="text" id="municipio" name="municipio" class="form-control" value="{{ old('municipio') }}"/>
 
                     <label for="estado" class="form-label">Estado</label>
                     <select class="form-select form-select-sm" id="estado" name="estado">
-                        <option value="activo">Activo</option>
-                        <option value="inactivo">Inactivo</option>
+                        <option value="activo" {{ old("estado") == "activo" ? "selected" : "" }}>Activo</option>
+                        <option value="inactivo" {{ old("estado") == "inactivo" ? "selected" : "" }}>Inactivo</option>
                     </select>
+
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" class="form-control" value="{{ old('telefono') }}"/>
+                    <div class="form-text mb-2">Teléfono del tutor</div>
+
+                    <label for="email" class="form-label">Mail</label>
+                    <input type="email" id="email" name="email" class="form-control" value="{{ old('email') }}"/>
+                    <div class="form-text mb-2">Correo electrónico del tutor</div>
+                    
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
                 </form>
-
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="text" id="telefono" name="telefono" class="form-control"/>
-
-                <label for="email" class="form-label">Mail</label>
-                <input type="email" id="email" name="email" class="form-control"/><br>
+                
+                
             </div>
             <div class="col-4"></div>
         </div>
