@@ -1,0 +1,14 @@
+{
+    "empresa": "Empresa",
+    "tipo_documento": "Tipo de documento",
+    "dni": "Documento de identidad",
+    "nombre": "Nombre",
+    "primer_apellido": "Primer apellido",
+    "segundo_apellido": "Segundo apellido",
+    "pais_dni": "País DNI",
+    "provincia": "Província",
+    "municipio": "Municipio",
+    "estado": "Estado",
+    "telefono": "Teléfono",
+    "email": "Mail"
+}
