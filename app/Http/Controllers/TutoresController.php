@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\TutorModel;
 use App\Http\Requests\TutoresRequest;
 use Illuminate\Http\Request;
 
