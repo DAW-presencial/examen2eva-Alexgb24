@@ -19,4 +19,8 @@ Route::get('/', function () {
 	return "Hola mundo";
 });
 
+Route::get("/tutor", function() {
+return view("tutor");
+});
+
 Route::resource('/datos',DatosController::class);
