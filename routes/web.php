@@ -20,7 +20,6 @@ Route::get('/', function () {
 	return "Hola mundo";
 });
 
-Route::get("/tutor", [TutoresController::class, "index"])->name("tutor");
-Route::post('/tutor', [TutoresController::class, "store"]);
+Route::resource('/tutor', TutoresController::class);
 
 Route::resource('/datos',DatosController::class);
