@@ -31,7 +31,22 @@ class TutoresController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        TutorModel::create([
+            "empresa" => $request->empresa,
+            "tipo_doc" => $request->tipo_doc,
+            "dni" => $request->dni,
+            "nombre" => $request->nombre,
+            "primer_apellido" => $request->primer_apellido,
+            "segundo_apellido" => $request->segundo_apellido,
+            "pais_dni" => $request->pais_dni,
+            "provincia" => $request->provincia,
+            "municipio" => $request->municipio,
+            "estado" => $request->estado,
+            "telefono" => $request->telefono,
+            "email" => $request->email
+        ]);
+
+        return back();
     }
 
     /**
