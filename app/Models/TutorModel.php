@@ -13,7 +13,7 @@ class TutorModel extends Model
 
     protected $fillable = [
         "empresa",
-        "tipo_doc",
+        "tipo_documento",
         "dni",
         "nombre",
         "primer_apellido",

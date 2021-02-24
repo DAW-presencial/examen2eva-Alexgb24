@@ -33,7 +33,7 @@ class TutoresController extends Controller
     {
         TutorModel::create([
             "empresa" => $request->empresa,
-            "tipo_doc" => $request->tipo_doc,
+            "tipo_documento" => $request->tipo_documento,
             "dni" => $request->dni,
             "nombre" => $request->nombre,
             "primer_apellido" => $request->primer_apellido,
