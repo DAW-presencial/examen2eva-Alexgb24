@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TutoresController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DatosController;
 
@@ -19,8 +20,7 @@ Route::get('/', function () {
 	return "Hola mundo";
 });
 
-Route::get("/tutor", function() {
-return view("tutor");
-});
+Route::get("/tutor", [TutoresController::class, "index"])->name("tutor");
+Route::post('/tutor', [TutoresController::class, "store"]);
 
 Route::resource('/datos',DatosController::class);
