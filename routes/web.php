@@ -17,7 +17,7 @@ use App\Http\Controllers\DatosController;
 */
 
 Route::get('/', function () {
-	return redirect()->route("tutor.create");
+	return redirect()->route("docentes.create");
 });
 
 Route::resource('/tutor', TutoresController::class);

@@ -109,6 +109,15 @@
                         </div>
                     @enderror
                     
+                    <label for="identificador" class="form-label">{{ __("identificador") }}</label>
+                    <input required type="text" id="identificador" name="identificador" class="form-control" value="{{ old('identificador') }}"/>
+                    
+                    @error('identificador')
+                        <div class="alert alert-danger mb-2" role="alert">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                    
                     <label for="tipo_identificador" class="form-label">{{ __("tipo_identificador") }}</label>
                     <select required class="form-select form-select-sm" id="tipo_identificador" name="tipo_identificador" value="{{ old('tipo_identificador') }}">
                         <option value="nif">{{ __("docentes.nif") }}</option>

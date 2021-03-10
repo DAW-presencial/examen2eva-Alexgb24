@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CenDocenteModel;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\DocentesRequest;
 use Illuminate\Http\Request;
+
 
 class CenDocenteController extends Controller
 {
@@ -15,12 +17,12 @@ class CenDocenteController extends Controller
      */
     public function index()
     {
-        return view("docentes");
+        return "";
     }
     
     public function create()
     {
-        return "";
+        return view("docentes");
     }
 
     /**
@@ -31,7 +33,21 @@ class CenDocenteController extends Controller
      */
     public function store(Request $request) {
 
-        dd($request);
+        CenDocenteModel::create([
+            "denominacion" => $request->denominacion,
+            "codigo" => $request->codigo,
+            "CIF" => $request->CIF,
+            "titularidad" => $request->titularidad,
+            "dir_postal" => $request->dir_postal,
+            "CP" => $request->CP,
+            "director_nom" => $request->director_nom,
+            "director_apell" => $request->director_apell,
+            "director_apell2" => $request->director_apell2,
+            "identificador" => $request->identificador,
+            "tipo_identificador" => $request->tipo_identificador,
+        ]);
+
+        return back();
 
     }
 
