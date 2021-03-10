@@ -10,5 +10,17 @@
     "municipio": "Municipio",
     "estado": "Estado",
     "telefono": "Teléfono",
-    "email": "Mail"
+    "email": "Mail",
+    "denominacion": "Denominacion",
+    "codigo": "Codigo",
+    "CIF": "CIF",
+    "titularidad": "Titularidad",
+    "dir_postal": "Direccion Postal",
+    "CP": "Codigo Postal",
+    "director_nom": "Nombre Director",
+    "director_apell": "Primer Apellido Director",
+    "director_apell2": "Segundo Apellido Director",
+    "identificador": "Identificador",
+    "tipo_identificador": "Tipo de identificador"
 }
+

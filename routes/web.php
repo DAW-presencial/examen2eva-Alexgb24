@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CenDocenteController;
 use App\Http\Controllers\TutoresController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DatosController;
@@ -16,9 +17,11 @@ use App\Http\Controllers\DatosController;
 */
 
 Route::get('/', function () {
-	return redirect()->route("tutor.create");
+	return redirect()->route("docentes.create");
 });
 
 Route::resource('/tutor', TutoresController::class);
 
 Route::resource('/datos',DatosController::class);
+
+Route::resource('/docentes', CenDocenteController::class);
