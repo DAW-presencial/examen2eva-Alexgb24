@@ -18,11 +18,12 @@
                 
                 @if ($errors->any())
                     <div class="alert alert-warning" role="alert">
-                        {{ $error }}
+                        {{ $errors }}
                     </div>
                 @endif
                 
-                <form action="">
+                <form action="{{ route('docentes') }}" method="POST">
+                    @csrf
                     <label for="denominacion" class="form-label">{{ __("denominacion") }}</label>
                     <input required type="text" id="denominacion" name="denominacion" class="form-control"  value="{{ old('denominacion') }}"/>
                     

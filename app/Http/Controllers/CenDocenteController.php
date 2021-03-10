@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\DocentesRequest;
 use Illuminate\Http\Request;
 
 class CenDocenteController extends Controller
@@ -14,7 +15,7 @@ class CenDocenteController extends Controller
      */
     public function index()
     {
-        //
+        return view("docentes");
     }
 
     /**
@@ -23,9 +24,10 @@ class CenDocenteController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(DocentesRequest $request) {
+
+        dd($request);
+
     }
 
     /**

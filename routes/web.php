@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CenDocenteController;
 use App\Http\Controllers\TutoresController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DatosController;
@@ -23,6 +24,5 @@ Route::resource('/tutor', TutoresController::class);
 
 Route::resource('/datos',DatosController::class);
 
-Route::get("/docentes", function() {
-return view("docentes");
-});
+Route::get("/docentes", [CenDocenteController::class, "index"])->name("docentes");
+Route::post('/docentes', [CenDocenteController::class, "store"]);
