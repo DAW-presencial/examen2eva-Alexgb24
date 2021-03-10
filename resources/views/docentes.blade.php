@@ -16,39 +16,42 @@
                     <h2>Docentes</h2>
                 </div>
                 <form action="">
-                    <label for="denominacion" class="form-label">Denominacion</label>
+                    <label for="denominacion" class="form-label">{{ __("denominacion") }}</label>
                     <input type="text" id="denominacion" name="denominacion" class="form-control"  value="{{ old('denominacion') }}"/>
                     
-                    <label for="codigo" class="form-label">Codigo</label>
+                    <label for="codigo" class="form-label">{{ __("codigo") }}</label>
                     <input type="text" id="codigo" name="codigo" class="form-control" value="{{ old('codigo') }}"/>
                     
-                    <label for="titularidad" class="form-label">Estado</label>
+                    <label for="CIF" class="form-label">{{ __("CIF") }}</label>
+                    <input type="text" id="CIF" name="CIF" class="form-control" value="{{ old('CIF') }}"/>
+                    
+                    <label for="titularidad" class="form-label">{{ __("titularidad") }}</label>
                     <select class="form-select form-select-sm" id="titularidad" name="titularidad" value="{{ old('titularidad') }}">
-                        <option value="publico">Publico</option>
-                        <option value="privado">Privado</option>
-                        <option value="concertado">Concertado</option>
+                        <option value="publico">{{ __("docentes.publico") }}</option>
+                        <option value="privado">{{ __("docentes.privado") }}</option>
+                        <option value="concertado">{{ __("docentes.concertado") }}</option>
                     </select>
 
-                    <label for="dir_postal" class="form-label">Direccion Postal</label>
+                    <label for="dir_postal" class="form-label">{{ __("dir_postal") }}</label>
                     <input type="text" id="dir_postal" name="dir_postal" class="form-control" value="{{ old('dir_postal') }}"/>
 
-                    <label for="CP" class="form-label">Codigo Postal</label>
+                    <label for="CP" class="form-label">{{ __("CP") }}</label>
                     <input type="text" id="CP" name="CP" class="form-control" value="{{ old('CP') }}"/>
                     
-                    <label for="director_nom" class="form-label">Nombre Director</label>
+                    <label for="director_nom" class="form-label">{{ __("director_nom") }}</label>
                     <input type="text" id="director_nom" name="director_nom" class="form-control" value="{{ old('director_nom') }}"/>
 
-                    <label for="director_apell" class="form-label">Primer apellido</label>
+                    <label for="director_apell" class="form-label">{{ __("director_apell") }}</label>
                     <input type="text" id="director_apell" name="director_apell" class="form-control" value="{{ old('director_apell') }}"/>
 
-                    <label for="director_apell2" class="form-label">Segundo apellido</label>
+                    <label for="director_apell2" class="form-label">{{ __("director_apell2") }}</label>
                     <input type="text" id="director_apell2" name="director_apell2" class="form-control" value="{{ old('director_apell2') }}"/>
 
-                    <label for="tipo_identificador" class="form-label">Tipo de documento</label>
+                    <label for="tipo_identificador" class="form-label">{{ __("tipo_identificador") }}</label>
                     <select class="form-select form-select-sm" id="tipo_identificador" name="tipo_identificador" value="{{ old('tipo_identificador') }}">
-                        <option value="nif">NIF</option>
-                        <option value="nie">NIE</option>
-                        <option value="pasaporte">Pasaporte</option>
+                        <option value="nif">{{ __("docentes.nif") }}</option>
+                        <option value="nie">{{ __("docentes.nie") }}</option>
+                        <option value="pasaporte">{{ __("docentes.pasaporte") }}</option>
                     </select>
                     
                     <button type="submit" class="btn btn-primary">Enviar</button>
