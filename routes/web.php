@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::resource('/tutor', TutoresController::class);
 
 Route::resource('/datos',DatosController::class);
+
+Route::get("/docentes", function() {
+return view("docentes");
+});
