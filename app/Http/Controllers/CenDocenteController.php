@@ -17,6 +17,11 @@ class CenDocenteController extends Controller
     {
         return view("docentes");
     }
+    
+    public function create()
+    {
+        return "";
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -24,7 +29,7 @@ class CenDocenteController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(DocentesRequest $request) {
+    public function store(Request $request) {
 
         dd($request);
 
@@ -38,7 +43,7 @@ class CenDocenteController extends Controller
      */
     public function show($id)
     {
-        //
+        return "";
     }
 
     /**
@@ -52,6 +57,11 @@ class CenDocenteController extends Controller
     {
         //
     }
+    
+    public function edit($id)
+    {
+        return "";
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -61,6 +71,6 @@ class CenDocenteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return "";
     }
 }

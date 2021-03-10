@@ -22,7 +22,7 @@
                     </div>
                 @endif
                 
-                <form action="{{ route('docentes') }}" method="POST">
+                <form action="{{ route('docentes.store') }}" method="POST">
                     @csrf
                     <label for="denominacion" class="form-label">{{ __("denominacion") }}</label>
                     <input required type="text" id="denominacion" name="denominacion" class="form-control"  value="{{ old('denominacion') }}"/>

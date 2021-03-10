@@ -24,5 +24,4 @@ Route::resource('/tutor', TutoresController::class);
 
 Route::resource('/datos',DatosController::class);
 
-Route::get("/docentes", [CenDocenteController::class, "index"])->name("docentes");
-Route::post('/docentes', [CenDocenteController::class, "store"]);
+Route::resource('/docentes', CenDocenteController::class);
