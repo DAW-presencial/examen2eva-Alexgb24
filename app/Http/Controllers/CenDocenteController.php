@@ -46,8 +46,37 @@ class CenDocenteController extends Controller
             "identificador" => $request->identificador,
             "tipo_identificador" => $request->tipo_identificador,
         ]);
+        
+        $docente1 = new CenDocenteModel;
+        $docente1->denominacion = "Profesor";
+        $docente1->codigo = "A-7387485658";
+        $docente1->CIF = "G32432432";
+        $docente1->titularidad = "privado";
+        $docente1->dir_postal = "Camino de la vileta 114";
+        $docente1->CP = "07011";
+        $docente1->director_nom = "Jorge";
+        $docente1->director_apell = "Herrero";
+        $docente1->director_apell2 = "Jimenez";
+        $docente1->identificador = "45275927P";
+        $docente1->tipo_identificador = "nif";
+        
+        $docente2 = new CenDocenteModel;
+        $docente1->denominacion = "Maestro";
+        $docente1->codigo = "P-7387285098";
+        $docente1->CIF = "X32404475";
+        $docente1->titularidad = "publico";
+        $docente1->dir_postal = "Camino de Manacor 76";
+        $docente1->CP = "07011";
+        $docente1->director_nom = "Alberto";
+        $docente1->director_apell = "Garcia";
+        $docente1->director_apell2 = "Berilio";
+        $docente1->identificador = "45729472L";
+        $docente1->tipo_identificador = "nif";
 
-        return back();
+        $docente1->save();
+        $docente2->save();
+
+        return $request;
 
     }
 
