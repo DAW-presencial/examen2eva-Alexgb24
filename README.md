@@ -1,3 +1,7 @@
+### URL del remoto https://us-east-2.console.aws.amazon.com/ec2/v2/connect/ec2-user/i-0a0bb32cf8e747b03
+#### /var/www/app/laravel es donde esta la raiz del proyecto
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
